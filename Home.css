@@ -1,0 +1,133 @@
+nav{
+    height: 12vh;
+    
+}
+
+.front{
+    text-align: center;
+    align-items: center;
+}
+
+.front-images {
+    border: 1px solid green;
+    display: grid;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+ 
+    
+}
+
+.alcohol-banner img{    
+    width: 45%;
+    height: 50vh;
+    margin: px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.alcohol-banner :hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: 1px solid black;
+}
+
+.row img{
+    height: 15vh;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+}
+.whatsapp-float img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+.whatsapp-float img:hover {
+    transform: scale(1.1);
+
+    @media(max-width: 991px){
+        .sidebar{
+            background-color: blue;
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+.mainpage img{
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 50px;
+    
+    
+   
+}
+
+.mainpage:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.wheel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  animation: rotate 10s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(calc(var(--i) * 90deg)) translateX(120px) rotate(calc(var(--i) * -90deg));
+  transform-origin: center;
+}
+
+.image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.section img{
+    height: 30vh;
+    width: 60%;
+}
+
+.front-page{
+    
+   
+}
+ .hero {
+      background: url('https://via.placeholder.com/1200x400/004d99/ffffff?text=Big+Sale+This+Week!') no-repeat center/cover;
+      height: 400px;
+      display: flex;
+      margin-top: 50px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      color: rgb(255, 255, 255);
+      font-size: 2.5em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      background-color: rgb(65, 69, 68);
+      width: 90%;
+    }
